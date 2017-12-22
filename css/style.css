@@ -144,11 +144,11 @@ p {
 }
 .sp12 .number {
   position: absolute;
-  top: 3rem;
+  top: 1rem;
   display: inline-block;
-  font-size: 1.6rem;
+  font-size: 2rem;
   background-color: #5db1e2;
-  padding: 0.6rem;
+  padding: 1rem;
   border-radius: 50%;
   color: #ffffff;
 }
