@@ -8,6 +8,10 @@ section {
   padding: 5rem 0;
   font-family: "Roboto";
 }
+
+*:hover,*:link, *:focus, *:visited {
+  outline: none;
+}
 .light {
   color: #ffffff;
 }
@@ -44,6 +48,42 @@ p {
   font-size: 1.6rem;
   line-height: 2rem;
 }
+.top {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255,255,255,0.95);
+  z-index: 100;
+}
+.top-nav {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+}
+.top-nav li {
+  display: inline-block;
+  text-align: center;
+  padding: 2rem;
+}
+.top-nav-item {
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.callback {
+  
+  padding-top: 3px;
+  font-size: 1.6rem;
+  padding: 0.6rem 2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px ;
+  text-transform: uppercase;
+  z-index: 10;
+  opacity: 1;
+
+}
 .but {
   background-color: #e50606;
   padding: 1.5rem 4rem;
@@ -55,11 +95,126 @@ p {
   border: none;
   border-radius: 7px;
 }
+
+
+
+
+
+
+
+
+// Мэйн
+
+.header h2.header-subtitle {
+  font-size: 5rem;
+  line-height: 8rem;
+  text-transform: uppercase;
+}
+.header {
+  margin-bottom: 10rem;
+  background: #fff url(../img/bg_header.png) center no-repeat;
+  background-size: cover;
+}
+
+.arrows {
+  position: absolute;
+  top: 45%;
+  right: -5%;
+
+}
+
+h1.header-title{
+  font-size: 11rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5db1e2;
+}
+
+.header .text{
+  font-size: 1.8rem;
+  margin-bottom: 20rem;
+}
+
+.grey-line {
+  display: inline-block;
+  height: 2px;
+  width: 30rem;
+  background-color: grey;
+  margin: 2rem;
+}
+
+.header-cost {
+  font-size: 2rem;
+  color: #bfbdbd; 
+  margin-bottom: 1.2rem;
+}
+
+.header-cost-new {
+  font-size: 2rem; 
+}
+
+
+
+.blue {
+  color: #5db1e2;
+  font-size: 2.8rem; 
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form-main {
+  position: relative;
+  top: 36rem;
+  width: 40rem;
+  background-color:#00acd7;
+  padding: 10rem 3rem 3rem 3rem;
+}
+
+.form-main input {
+  width: 100%;
+  margin-bottom: 2rem;
+  height: 4rem;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-toolbar {
+  width: 100%;
+  border-radius: 8px;
+  height: 4rem;
+}
+
+.vr-img {
+  position: absolute;
+  top: 20%;
+  left: -10rem;
+  width: 140%;
+  z-index: 10;
+}
+
+.vr-img-form {
+  position: absolute;
+  top: 29rem;
+  left: 0rem;
+  width: 100%;
+}
+
+
+
 .cap {
-  background-color: #514d4d;
+  background: #fff url(../img/headeer3_2.jpg) center no-repeat;
+  background-size: 100% 110%;
+}
+
+.cap h2.title {
+  color: #fff;
+  font-weight: 700;
 }
 .cap-sub {
   color: #ffffff;
+  text-align: left;
 }
 .cap-img {
   width: 90%;
@@ -78,9 +233,15 @@ p {
 .compare-sub {
   text-align: center;
 }
+
+.cost .title {
+  font-weight: 700;
+  margin-top: 7rem;
+}
 .cost {
   text-align: center;
-  background-color: #5db1e2;
+  background: #fff url(../img/headeer4_1.jpg) center no-repeat;
+  background-size: cover;
 }
 .cost-img {
   margin-top: 4rem;
@@ -111,15 +272,21 @@ p {
   text-align: right;
 }
 .use {
-  background-color: #5db1e2;
+  background: #fff url(../img/headeer5_2.jpg) center no-repeat;
+  background-size: cover;
 }
+
 .use-list {
   font-size: 1.8rem;
 }
 .use-list li {
   margin-bottom: 2rem;
 }
-.order-now {
+
+.video-modal {
+  display: visible;
+}
+ .order-now {
   text-align: left;
 }
 .order-now .timer {
@@ -135,12 +302,16 @@ p {
   font-size: 6rem;
   text-align: left;
 }
+
+.sp12 .title{
+  margin-bottom: 4rem;
+}
 .sp12 .big-blue {
   font-size: 14rem;
   color: #5db1e2;
-  position: absolute;
-  top: -1.5rem;
-  left: 13rem;
+  line-height: 12rem;
+  margin-bottom: 4rem;
+  
 }
 .sp12 .number {
   position: absolute;
@@ -162,7 +333,8 @@ p {
   min-height: 18rem;
 }
 .reviews {
-  background-color: #5db1e2;
+  background: #fff url(../img/headeer6_3.jpg) center no-repeat;
+  background-size: cover;
 }
 .reviews img {
   width: 90%;
@@ -180,6 +352,7 @@ p {
 
 .delivery {
   text-align: center;
+  background-color: #efefef;
 }
 .delivery-cost {
   border: 1px solid #000000;
@@ -222,7 +395,7 @@ p {
   margin-top: 0;
 }
 .delivery .tab-content #adress .adress-text {
-  margin-top: 23%;
+  margin-top: 2rem;
   font-size: 1.4rem;
 }
 .delivery .tab-content #adress .adress-form {
@@ -232,11 +405,9 @@ p {
   font-size: 1.6rem;
   width: 100%;
 }
-.delivery .tab-content #adress .adress-form .button-blue {
-  position: absolute;
-  right: -100%;
-  bottom: 7rem;
+ .button-blue {
   padding: 2rem;
+  margin-top: 2rem;
   font-size: 2.4rem;
   height: 10rem;
   color: #ffffff;
@@ -300,6 +471,7 @@ p {
 }
 .anyoffer-item .speciality {
   font-size: 1.2rem;
+
 }
 .anyoffer-item .speciality li {
   line-height: 2rem;
@@ -366,3 +538,16 @@ p {
 .footer .ur-inf {
   color: #ffffff;
 }
+
+.use-but {
+  background-color: transparent;
+  border: none;
+  margin: 4rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.use-but img {
+  margin-left: 3rem;
+}
+
