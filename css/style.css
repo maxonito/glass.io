@@ -501,9 +501,7 @@ h1.header-title{
 .footer .number {
   font-size: 2rem;
 }
-.footer .btn-grey {
-  background-color: #e0e0e0;
-}
+
 .footer-btn {
   font-size: 1.6rem;
   padding: 0.8rem;
@@ -536,6 +534,7 @@ h1.header-title{
   padding: 2rem;
 }
 .footer .ur-inf {
+  line-height: 1.2rem;
   color: #ffffff;
 }
 
