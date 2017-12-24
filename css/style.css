@@ -289,6 +289,9 @@ h1.header-title{
  .order-now {
   text-align: left;
 }
+.order-now .blue{
+  font-size: 7rem;
+}
 .order-now .timer {
   margin-top: 5rem;
 }
