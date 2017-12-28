@@ -375,8 +375,9 @@ h1.header-title{
   border-radius: 5px;
 }
 .delivery-cost img {
-  max-width: 25rem;
-  margin-bottom: 10rem;
+  width: 100%;
+  margin-bottom: 2rem;
+  min-height: 48rem;
 }
 .delivery-cost-text {
   font-size: 3rem;
